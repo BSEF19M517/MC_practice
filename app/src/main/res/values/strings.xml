@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MC01</string>
+    <string name="btnID">login</string>
+    <string name="welcome_user">LogIn Please</string>
+    <string name="enter_your_name">Enter Your User Name</string>
+    <string name="enter_password">Enter Your Password</string>
+</resources>
