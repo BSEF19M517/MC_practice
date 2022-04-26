@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_horizontal1);
+        setContentView(R.layout.activity_main);
         etName = (EditText) findViewById(R.id.editTextTextPersonName);
         etPass = (EditText) findViewById(R.id.editTextTextPersonName2);
     }
