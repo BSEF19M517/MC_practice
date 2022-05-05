@@ -1,35 +1,17 @@
 package com.bsef19m517.mc01;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
-    Button mButtonView, mButtonCounter;
-    TextView mTextView;
-    private int counter = 0;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SecondActivity extends AppCompatActivity {
+    private static final String TAG = "SecondActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lc);
+        setContentView(R.layout.activity_linear_calc);
         Log.d(TAG,":::onCreate function:::");
-        mButtonView = findViewById(R.id.btn1);
-        mTextView = findViewById(R.id.t1);
-        mButtonCounter = findViewById(R.id.btn2);
-
-        mButtonCounter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ++counter;
-                mTextView.setText("Total" + counter);
-            }
-        });
     }
     @Override
     protected void onStart(){
