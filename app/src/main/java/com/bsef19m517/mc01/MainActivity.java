@@ -30,6 +30,19 @@ public class MainActivity extends AppCompatActivity {
                 mTextView.setText("Total" + counter);
             }
         });
+
+        if(savedInstanceState != null){
+            String count = savedInstanceState.getString("count");
+            if(mTextView!= null){
+                mTextView.setText(count);
+            }
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putString("count",String.valueOf(mTextView.getText()));
     }
     @Override
     protected void onStart(){
