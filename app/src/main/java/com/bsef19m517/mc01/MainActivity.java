@@ -1,9 +1,13 @@
 package com.bsef19m517.mc01;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -77,5 +81,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy(){
         super.onDestroy();
         Log.d(TAG,":::onDestroy function:::");
+    }
+
+    public void scnd(View view) {
+        Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+        startActivity(intent);
     }
 }
