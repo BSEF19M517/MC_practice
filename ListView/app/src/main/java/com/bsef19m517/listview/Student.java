@@ -45,5 +45,4 @@ public class Student {
         this.imgId = imgId;
     }
 
-
 }
